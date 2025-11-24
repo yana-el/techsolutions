@@ -1,7 +1,7 @@
 
 
 nav {
-    background-color: #4d58ef;
+    background-color: #f34949;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
@@ -63,17 +63,4 @@ details{margin-top:6px}
   max-width: 1000px;       /* optionnel : limite la largeur */
 }nav .logo {
     margin-left: 20px;
-}
-
-.actus-title{
-     width: 35%;
-    margin: 20px auto; /* centre horizontalement */
-    text-align: center; /* centre le texte */
-    white-space: normal;
-}
-.actus-texte1 {
-  width: 30%;
-  margin: 0 auto;      /* centre horizontalement */
-  text-align: justify;
-  text-align-last: center;
 }

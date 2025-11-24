@@ -21,9 +21,9 @@ $url = "admin.php";
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
         if ($user) {
                 echo "L'utilisateur '$username' a pour ID : " . $user['id'] . " et le hash: " . $user['password'];
-                } else {
+        } else {
                 echo "Aucun utilisateur trouvé avec le nom '$username'.";
-                }
+        }
         
         if($hash == $user['password']) {
                 echo " <br>Mot de passe correcte";
@@ -34,10 +34,10 @@ $url = "admin.php";
                 $acces = "non";
         }
         if ($acces == "oui") {
-                $url = "contact_ok.php";
-                } else {
+                $url = "admin_ok.php";
+        } else {
                 $url = "admin.php";
-                }
+        }
         ?>
         
 </form>

@@ -2,33 +2,15 @@
 require_once __DIR__ . '/includes/db.php';
 require_once __DIR__ . '/includes/header.php';
 
-$pcs = pdo()->query('SELECT id, name, image_url, price FROM pcs ORDER BY id')->fetchAll();
 ?>
-<h1>Nos PC</h1>
-<section class="grid">
-<?php foreach ($pcs as $pc): ?>
-  <article class="card">
-    <img src="<?= e($pc['image_url']) ?>" alt="Photo de <?= e($pc['name']) ?>">
-    <div class="p">
-      <h3><?= e($pc['name']) ?></h3>
-      <p class="price"><?= number_format((float)$pc['price'], 2, ',', ' ') . ' ' . CURRENCY ?></p>
-      <details>
-        <summary>Voir les composants</summary>
-        <ul>
-          <?php
-            $stmt = pdo()->prepare('
-              SELECT c.name
-              FROM pc_components pc
-              JOIN components c ON c.id = pc.component_id
-              WHERE pc.pc_id = ?
-            ');
-            $stmt->execute([(int)$pc['id']]);
-            foreach ($stmt->fetchAll() as $row): ?>
-              <li><?= e($row['name']) ?></li>
-          <?php endforeach; ?>
-        </ul>
-      </details>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+<div class="position-relative text-center">
+    <img src="img/img3.png" class="img-fluid w-100" style="height:350px; object-fit:cover;">
+    <div class="position-absolute top-50 start-50 translate-middle text-white">
+        <h2><b>TechSolutions</b></h2>
+        <a>Votre entreprise spécialisée.</a>
     </div>
-  </article>
-<?php endforeach; ?>
-</section>
+</div>
