@@ -14,3 +14,97 @@ require_once __DIR__ . '/includes/header.php';
         <a>Votre entreprise spécialisée.</a>
     </div>
 </div>
+<br> <br>
+
+<div class="position-relative text-center">
+    <div class="container mt-5">
+
+  <!-- ITEM 1 -->
+  <div class="row align-items-center p-4 border rounded-0">
+    <div class="col-md-6">
+      <img src="img/metier1.png" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h3>Développeur logiciel</h3>
+      <p>Ton texte ici...</p>
+    </div>
+  </div>
+
+  <!-- ITEM 2 -->
+  <div class="row align-items-center p-4 border border-top-0 rounded-0 flex-md-row-reverse">
+    <div class="col-md-6">
+      <img src="img/metier2.png" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h3>SysAdmin</h3>
+      <p>Ton texte ici...</p>
+    </div>
+  </div>
+
+  <!-- ITEM 3 -->
+  <div class="row align-items-center p-4 border border-top-0 rounded-0">
+    <div class="col-md-6">
+      <img src="img/metier3.png" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h3>Designeur</h3>
+      <p>Ton texte ici...</p>
+    </div>
+  </div>
+
+  <!-- ITEM 4 -->
+  <div class="row align-items-center p-4 border border-top-0 rounded-0 flex-md-row-reverse">
+    <div class="col-md-6">
+      <img src="img/metier4.png" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h3>Marketeur et Vendeur</h3>
+      <p>Ton texte ici...</p>
+    </div>
+  </div>
+
+  <!-- ITEM 5 -->
+  <div class="row align-items-center p-4 border border-top-0 rounded-0">
+    <div class="col-md-6">
+      <img src="img/metier5.png" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h3>Titre 5</h3>
+      <p>Ton texte ici...</p>
+    </div>
+  </div>
+
+  <!-- ITEM 6 -->
+  <div class="row align-items-center p-4 border border-top-0 rounded-0 flex-md-row-reverse">
+    <div class="col-md-6">
+      <img src="img/metier6.png" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h3>Titre 6</h3>
+      <p>Ton texte ici...</p>
+    </div>
+  </div>
+
+  <!-- ITEM 7 -->
+  <div class="row align-items-center p-4 border border-top-0 rounded-0">
+    <div class="col-md-6">
+      <img src="img/metier7.png class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h3>Titre 7</h3>
+      <p>Ton texte ici...</p>
+    </div>
+  </div>
+
+</div>
+>
+
+</div>
+<style>
+  .img-fixed {
+    width: 100%;
+    height: 250px; /* Tu peux changer la hauteur */
+    object-fit: cover; /* Garde une belle image sans déformation */
+    border-radius: 8px;
+  }
+</style>
