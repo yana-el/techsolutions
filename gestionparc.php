@@ -11,7 +11,6 @@ $pcs = pdo()->query('SELECT id, name, image_url, price FROM pcs ORDER BY id')->f
     <img src="<?= e($pc['image_url']) ?>" alt="Photo de <?= e($pc['name']) ?>">
     <div class="p">
       <h3><?= e($pc['name']) ?></h3>
-      <p class="price"><?= number_format((float)$pc['price'], 2, ',', ' ') . ' ' . CURRENCY ?></p>
       <details>
         <summary>Voir les composants</summary>
         <ul>

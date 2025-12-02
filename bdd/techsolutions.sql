@@ -63,7 +63,7 @@ CREATE TABLE `pc_components` (
 
 LOCK TABLES `pc_components` WRITE;
 /*!40000 ALTER TABLE `pc_components` DISABLE KEYS */;
-INSERT INTO `pc_components` VALUES (1,16),(1,30),(1,36),(1,38),(1,46),(1,47),(1,50),(1,51),(1,53),(1,55),(1,57),(2,22),(2,33),(2,38),(2,45),(2,47),(2,50),(2,52),(2,53),(2,54),(2,57),(2,58);
+INSERT INTO `pc_components` VALUES (1,16),(1,30),(1,36),(1,38),(1,46),(1,47),(1,50),(1,51),(1,53),(1,55),(1,57),(2,22),(2,33),(2,38),(2,45),(2,47),(2,50),(2,52),(2,53),(2,54),(2,57),(2,58),(3,24),(3,30),(3,35),(3,41),(3,46),(3,47),(3,48),(3,49),(3,51),(3,53),(3,54),(3,57);
 /*!40000 ALTER TABLE `pc_components` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -80,7 +80,7 @@ CREATE TABLE `pcs` (
   `image_url` varchar(255) NOT NULL,
   `price` decimal(10,2) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -89,7 +89,7 @@ CREATE TABLE `pcs` (
 
 LOCK TABLES `pcs` WRITE;
 /*!40000 ALTER TABLE `pcs` DISABLE KEYS */;
-INSERT INTO `pcs` VALUES (1,'Techsolutions Développeur ','https://picsum.photos/seed/pc1/400/260',549.00),(2,'TechSolutions Gamer','https://picsum.photos/seed/pc2/400/260',779.00),(3,'TechSolutions Creator','https://picsum.photos/seed/pc3/400/260',999.00);
+INSERT INTO `pcs` VALUES (1,'Techsolutions Développeur ','img/metier1.png',549.00),(2,'Techsolutions SysAdmin','img/metier2.png',779.00),(3,'TechSolutions Designer','img/metier3.png',999.00),(4,'Techsolutions Marketing et Vendeur','img/metier4.png',800.00),(5,'Techsolutions Support Client','img/metier5.png',949.00),(6,'Techsolutions Ressources humaines et administration ','img/metier6.png',699.00),(7,'Techsolutions Direction','img/metier7.png',750.00);
 /*!40000 ALTER TABLE `pcs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -127,4 +127,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-02 14:26:39
+-- Dump completed on 2025-12-02 14:54:34
