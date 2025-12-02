@@ -26,7 +26,7 @@ require_once __DIR__ . '/includes/header.php';
     </div>
     <div class="col-md-6">
       <h3>Développeur logiciel</h3>
-      <p>Ton texte ici...</p>
+      <p>Notre entreprise regroupe une équipe de 15 développeurs responsables de la création et de la maintenance des logiciels sur mesure pour les clients.</p>
     </div>
   </div>
 
@@ -37,7 +37,7 @@ require_once __DIR__ . '/includes/header.php';
     </div>
     <div class="col-md-6">
       <h3>SysAdmin</h3>
-      <p>Ton texte ici...</p>
+      <p>Notre entreprise dispose de 5 gestionnaires des infrastructures systèmes et réseau. Ils sont chargés de la mise en place et de l'entretien des infrastructures informatiques, incluant les réseaux et les serveurs.</p>
     </div>
   </div>
 
@@ -48,7 +48,7 @@ require_once __DIR__ . '/includes/header.php';
     </div>
     <div class="col-md-6">
       <h3>Designeur</h3>
-      <p>Ton texte ici...</p>
+      <p>Notre entreprise dispose de 5 designers spécialisés dans la conception d’interfaces utilisateur attrayantes et fonctionnelles.</p>
     </div>
   </div>
 
@@ -59,7 +59,7 @@ require_once __DIR__ . '/includes/header.php';
     </div>
     <div class="col-md-6">
       <h3>Marketeur et Vendeur</h3>
-      <p>Ton texte ici...</p>
+      <p>Notre équipe dispose de 10 marketeurs et vendeurs chargés de la stratégie commerciale, de la promotion des services et de la relation client.</p>
     </div>
   </div>
 
@@ -69,8 +69,8 @@ require_once __DIR__ . '/includes/header.php';
       <img src="img/metier5.png" class="img-fluid rounded">
     </div>
     <div class="col-md-6">
-      <h3>Titre 5</h3>
-      <p>Ton texte ici...</p>
+      <h3>Support Client</h3>
+      <p>Dans notre entreprise, nous avons 5 membres du support client qui fournissent l’assistance technique et le support nécessaire aux clients.</p>
     </div>
   </div>
 
@@ -80,19 +80,19 @@ require_once __DIR__ . '/includes/header.php';
       <img src="img/metier6.png" class="img-fluid rounded">
     </div>
     <div class="col-md-6">
-      <h3>Titre 6</h3>
-      <p>Ton texte ici...</p>
+      <h3>RH et Administration</h3>
+      <p>Nous avons dans notre équipe 5 personnes chargées de l’administration et des ressources humaines. Elles gèrent le personnel, le recrutement et les aspects administratifs de l’entreprise.</p>
     </div>
   </div>
 
   <!-- ITEM 7 -->
   <div class="row align-items-center p-4 border border-top-0 rounded-0">
     <div class="col-md-6">
-      <img src="img/metier7.png class="img-fluid rounded">
+      <img src="img/metier7.png" class="img-fluid rounded">
     </div>
     <div class="col-md-6">
-      <h3>Titre 7</h3>
-      <p>Ton texte ici...</p>
+      <h3>Direction</h3>
+      <p>Nous disposons de 5 salariés en direction qui sont responsables de la gestion globale et de la stratégie de l’entreprise.</p>
     </div>
   </div>
 

@@ -5,11 +5,10 @@ $url = "admin.php";
 ?>
 
 <form action="" method="post">
-        <input type="text" name="username" placeholder="Utilisateur">
-        <input type="password" name="password" placeholder="Mot de passe">
-        <button type="submit">Se connecter</button>
+        <input class="champuser" type="text" name="username" placeholder="Utilisateur">
+        <input class="champmdp" type="password" name="password" placeholder="Mot de passe">
+        <button class="btnmdp" type="submit">Se connecter</button>
         <?php
-        
         $username = $_POST['username'] ?? '';
         $password = $_POST['password'] ?? '';
         $hash = hash('sha256', $password);
@@ -19,26 +18,20 @@ $url = "admin.php";
         $stmt->execute([':username' => $username]);
 
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
-        if ($user) {
-                echo "L'utilisateur '$username' a pour ID : " . $user['id'] . " et le hash: " . $user['password'];
-        } else {
-                echo "Aucun utilisateur trouvé avec le nom '$username'.";
+        if (!$user) {
+                return;
         }
-        
+
         if($hash == $user['password']) {
                 echo " <br>Mot de passe correcte";
                 $acces = "oui";
         } else {
                 echo " <br>Mot de passe incorrecte";
-                echo "<br>$hash";
-                $acces = "non";
         }
         if ($acces == "oui") {
-                $url = "admin_ok.php";
-        } else {
-                $url = "admin.php";
+                header('Location: http://localhost/sitetechsolution/admin_ok.php');
+                exit();
+
         }
         ?>
-        
 </form>
-<button type="button" onclick="window.location.href='<?= $url ?>'">Accéder</button>
