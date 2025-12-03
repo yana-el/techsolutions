@@ -21,5 +21,5 @@ require_once __DIR__ . '/includes/header.php';
     Cette explosion momentanée de la charge a abouti à ce qu'une partie du trafic traversant le réseau de Cloudflare a rencontré des erreurs. "Nous ne savons pas encore ce qui a causé ce pic de trafic inhabituel. Nous sommes tous mobilisés pour faire en sorte que le trafic soit assuré sans erreur." L'urgence première étant de restaurer l'activité. Ensuite, "nous nous pencherons sur la cause de ce pic de trafic", conclut Jackie Dutton.
     <br>
     <br><br><br><br>
-    <h2 class="actus-title">zzzzz</h2>
+    
 </p>
