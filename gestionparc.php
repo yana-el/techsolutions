@@ -4,7 +4,7 @@ require_once __DIR__ . '/includes/header2.php';
 
 $pcs = pdo()->query('SELECT id, name, image_url, price FROM pcs ORDER BY id')->fetchAll();
 ?>
-<h1>Nos PC</h1>
+<h1 class="centrer">Nos PC</h1>
 <section class="grid">
 <?php foreach ($pcs as $pc): ?>
   <article class="card">

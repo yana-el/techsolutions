@@ -64,3 +64,40 @@ details{margin-top:6px}
 }nav .logo {
     margin-left: 20px;
 }
+.centrer{
+    margin: 0 auto;      
+    text-align: justify;
+    text-align-last: center;
+}
+
+.message-box {
+    width: 400px;
+    margin: 40px auto;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.message-box2 {
+    width: 400px;
+    margin: 40px auto;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
