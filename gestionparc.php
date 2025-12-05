@@ -31,3 +31,4 @@ $pcs = pdo()->query('SELECT id, name, image_url, price FROM pcs ORDER BY id')->f
   </article>
 <?php endforeach; ?>
 </section>
+<?php require_once __DIR__ . '/includes/footer.php'; ?>

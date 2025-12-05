@@ -1,7 +1,6 @@
 <?php
 require_once __DIR__ . '/includes/db.php';
 require_once __DIR__ . '/includes/header.php';
-
 ?>
 <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -97,7 +96,6 @@ require_once __DIR__ . '/includes/header.php';
   </div>
 
 </div>
->
 
 </div>
 <style>
@@ -108,3 +106,5 @@ require_once __DIR__ . '/includes/header.php';
     border-radius: 8px;
   }
 </style>
+
+<?php require_once __DIR__ . '/includes/footer.php'; ?>

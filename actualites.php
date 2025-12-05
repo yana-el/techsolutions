@@ -23,3 +23,4 @@ require_once __DIR__ . '/includes/header.php';
     <br><br><br><br>
     
 </p>
+<?php require_once __DIR__ . '/includes/footer.php'; ?>
