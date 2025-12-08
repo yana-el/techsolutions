@@ -31,7 +31,6 @@ $url = "admin.php";
         if ($acces == "oui") {
                 header('Location: http://localhost/sitetechsolution/admin_ok.php');
                 exit();
-
         }
         ?>
 </form>
