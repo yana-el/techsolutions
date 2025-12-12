@@ -64,3 +64,94 @@ CREATE TABLE `form` (
 LOCK TABLES `form` WRITE;
 /*!40000 ALTER TABLE `form` DISABLE KEYS */;
 INSERT INTO `form` VALUES (1,'','0','0','0'),(2,'','test','test','0'),(3,'[value-2]','[value-3]','[value-4]','0'),(4,'[value-1]','[value-2]','[value-3]','0'),(5,'aze','aze','aez','0'),(6,'aze','aze','aze','0'),(7,'test','test','tet','0'),(8,'test','test','tet','0'),(9,'aze','aze','aze','0'),(10,'yanael.brt@gmail.com','Contact','Bonjour, j\'aimerais être en contact avec vous pour pouvoir configurer ma propre entreprise,\r\nMerci bien!\r\n','0');
+/*!40000 ALTER TABLE `form` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `pc_components`
+--
+
+DROP TABLE IF EXISTS `pc_components`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `pc_components` (
+  `pc_id` int(10) unsigned NOT NULL,
+  `component_id` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`pc_id`,`component_id`),
+  KEY `component_id` (`component_id`),
+  CONSTRAINT `pc_components_ibfk_1` FOREIGN KEY (`pc_id`) REFERENCES `pcs` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `pc_components_ibfk_2` FOREIGN KEY (`component_id`) REFERENCES `components` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pc_components`
+--
+
+LOCK TABLES `pc_components` WRITE;
+/*!40000 ALTER TABLE `pc_components` DISABLE KEYS */;
+INSERT INTO `pc_components` VALUES (1,16),(1,30),(1,36),(1,38),(1,46),(1,47),(1,50),(1,51),(1,53),(1,55),(1,57),(2,22),(2,33),(2,38),(2,45),(2,47),(2,50),(2,52),(2,53),(2,54),(2,57),(2,58),(3,24),(3,30),(3,35),(3,41),(3,46),(3,47),(3,48),(3,49),(3,51),(3,53),(3,54),(3,57),(4,15),(4,29),(4,36),(4,39),(4,42),(4,49),(4,50),(4,52),(4,53),(4,54),(4,56),(5,15),(5,29),(5,36),(5,39),(5,42),(5,49),(5,50),(5,52),(5,53),(5,54),(5,56),(6,15),(6,29),(6,36),(6,39),(6,42),(6,49),(6,50),(6,52),(6,53),(6,54),(6,56),(7,59),(7,60);
+/*!40000 ALTER TABLE `pc_components` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `pcs`
+--
+
+DROP TABLE IF EXISTS `pcs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `pcs` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `image_url` varchar(255) NOT NULL,
+  `price` decimal(10,2) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pcs`
+--
+
+LOCK TABLES `pcs` WRITE;
+/*!40000 ALTER TABLE `pcs` DISABLE KEYS */;
+INSERT INTO `pcs` VALUES (1,'Techsolutions Développeur ','img/metier1.png',549.00),(2,'Techsolutions SysAdmin','img/metier2.png',779.00),(3,'TechSolutions Designer','img/metier3.png',999.00),(4,'Techsolutions Marketing et Vendeur','img/metier4.png',800.00),(5,'Techsolutions Support Client','img/metier5.png',949.00),(6,'Techsolutions Ressources humaines et administration ','img/metier6.png',699.00),(7,'Techsolutions Direction','img/metier7.png',750.00);
+/*!40000 ALTER TABLE `pcs` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user`
+--
+
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (1,'admin','5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8'),(2,'admin1','25f43b1486ad95a1398e3eeb3d83bc4010015fcc9bedb35b432e00298d5021f7');
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-12-12  9:49:34
