@@ -11,7 +11,7 @@
         </div>
 
         <p class="mb-0" style="font-size:0.9rem; color:#666;">
-            © <?= date('Y') ?> TechSolutions
+            © 2025-2026 TechSolutions
         </p>
 
     </div>
