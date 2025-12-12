@@ -10,10 +10,28 @@ require_once __DIR__ . '/includes/header.php';
     <img src="img/img3.png" class="img-fluid w-100" style="height:350px; object-fit:cover;">
     <div class="position-absolute top-50 start-50 translate-middle text-white">
         <h2><b>TechSolutions</b></h2>
-        <a>Votre entreprise spécialisée.</a>
+        <a>Votre entreprise spécialisée en informatique.</a>
     </div>
 </div>
 <br> <br>
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Qui sommes-nous ?</h2>
+    <p class="text-center">
+        TechSolutions est une entreprise spécialisée dans les services informatiques.
+        Nous accompagnons les professionnels dans la création, la gestion et la sécurisation de leurs outils numériques.
+        Notre objectif est d’offrir des solutions fiables, adaptées et simples à utiliser, tout en garantissant
+        un haut niveau de sécurité.
+    </p>
+
+    <p class="text-center">
+        Nous regroupons plusieurs pôles : développement logiciel, infrastructure réseau, design d’interface,
+        marketing, support client, ressources humaines et direction.  
+        Nous mettons aussi un point d’honneur à rendre nos postes accessibles,
+        notamment pour les collaborateurs en situation de handicap.
+    </p>
+</div>
+
+<br>
 
 <div class="position-relative text-center">
     <div class="container mt-5">

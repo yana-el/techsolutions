@@ -12,7 +12,6 @@
         <li><a href="admin_ok.php">Accueil</a></li>
         <!-- <li><a href="login.php">Services</a></li> -->
         <li><a href="gestionparc.php">Gestion de Parc</a></li>
-        <!-- <li><a href="contact.php ">Contact</a></li>
-        <li><a href="admin.php">Admin</a></li> -->
+        <li><a href="gestionuser.php">Gestion Utilisateur</a></li>
       </ul>
     </nav>

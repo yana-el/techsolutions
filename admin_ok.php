@@ -50,10 +50,10 @@ $next_id = $next->fetchColumn();
 
     <div class="nav">
         <?php if ($prev_id): ?>
-            <a class="btn" href="?id=<?= $prev_id ?>">⬅ Précédent</a>
+            <a class="btn" href="?id=<?= $prev_id ?>"><= Précédent</a>
         <?php endif; ?>
         <?php if ($next_id): ?>
-            <a class="btn" href="?id=<?= $next_id ?>">Suivant ➡</a>
+            <a class="btn" href="?id=<?= $next_id ?>">Suivant =></a>
         <?php endif; ?>
         
     </div>
